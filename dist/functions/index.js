@@ -9,8 +9,8 @@
 
 const {onRequest} = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
-const mainJsFile =  require(__dirname + "/server/main");
-exports.ngssr = functions.https.onRequest(mainJsFile.app());
+const mainJs =  require(__dirname + "/server/main");
+exports.angularssrapp = functions.https.onRequest(mainJs.app());
 
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
